@@ -8,9 +8,10 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      fontFamily: {
+        serif: ["Playfair Display", "serif"],
+        sans: ["Poppins", "sans-serif"],
+        montserrat: ["Montserrat", "Arial", "sans-serif"],
       },
     },
   },
