@@ -40,12 +40,12 @@ const menu2 = [
 function Navbar() {
   return (
     <nav className="flex w-full h-[86px] justify-center relative text-white">
-      <div className="flex w-full max-w-[80%] justify-between px-8 items-center">
+      <div className="flex w-full max-w-[80%] justify-between px-8 items-center lg:flex-row flex-col text-center lg:text-left">
         {/* Kolom Kiri */}
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col justify-center gap-2">
           <p>Jl. Salemba Tengah No.35C,</p>
           <p>Kota Jakarta Pusat</p>
-          <div className="flex items-center gap-4 font-thin text-[20px]">
+          <div className="flex items-center gap-4 font-thin text-[20px] justify-center lg:justify-start">
             {menu1.map((m: any, index: any) => (
               <Link key={index} href={m.path} className="hover:text-blue-900">
                 {m.menu}
@@ -55,7 +55,7 @@ function Navbar() {
         </div>
 
         {/* Logo di Tengah */}
-        <div>
+        <div className="flex items-center justify-center my-4 lg:my-0">
           <img
             src="images/logo/logo.png"
             alt="logo"
@@ -64,10 +64,10 @@ function Navbar() {
         </div>
 
         {/* Kolom Kanan */}
-        <div className="flex flex-col gap-4 text-right">
+        <div className="flex flex-col justify-center gap-2 text-right">
           <p>Telepon : +62 852-1083-4732</p>
           <p>Email : notaris.juanitalr@gmail.com</p>
-          <div className="flex items-center gap-4 justify-start font-thin text-[20px]">
+          <div className="flex items-center gap-4 font-thin text-[20px] justify-center lg:justify-end">
             {menu2.map((m: any, index: any) => (
               <Link key={index} href={m.path} className="hover:text-blue-900">
                 {m.menu}

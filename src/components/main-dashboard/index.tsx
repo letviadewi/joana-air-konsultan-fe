@@ -1,15 +1,18 @@
 import React, { ReactNode } from "react";
-import Navbar from "./navbar";
+import Navbar from "../navbar";
 
 interface MainDashboardProps {
   children: ReactNode;
-  backgroundImage: string
+  backgroundImage: string;
 }
 
-export function MainDashboard({ backgroundImage, children }: MainDashboardProps) {
+export function MainDashboard({
+  backgroundImage,
+  children,
+}: MainDashboardProps) {
   return (
     <div
-      className="relative min-h-screen bg-cover bg-center flex items-center justify-center p-6"
+      className="relative h-[85vh] bg-cover bg-center flex items-center justify-center p-6"
       style={{ backgroundImage: `url('${backgroundImage}')` }}
     >
       <div className="absolute inset-0 bg-black/50">
