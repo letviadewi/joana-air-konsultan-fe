@@ -4,7 +4,6 @@ import Promotion from "./promotion-section";
 import Quotes from "./quote-section";
 import StartConversation from "../../components/start-conversation";
 import Footer from "@/components/footer";
-import Link from "next/link";
 
 const Beranda: React.FC = () => {
   return (
